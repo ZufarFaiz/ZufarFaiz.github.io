@@ -1,0 +1,904 @@
+
+@media (min-width:340px) and (max-width:584px){
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-size: 13px;
+        font-family: 'Inter', sans-serif; /* Предположение о шрифте */
+    }
+    
+    /* Заголовок */
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 10%;
+        background-color: rgba(255, 255, 255, 1); /* Цвет фона шапки */
+    }
+    
+    .header h1 {
+        color: rgba(88, 217, 40, 1); /* Цвет логотипа */
+    }
+    
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        padding-left: 0px;
+    }
+    
+    nav ul li {
+        margin-left: 50px; /* Пространство между элементами меню */
+        font-size: 25px;
+    }
+    footer nav ul li{
+        margin-left: 3vw; /* Пространство между элементами меню */
+        font-size: 2vw;
+    }
+    .headtext{
+        color:rgba(149, 174, 240, 1);
+        font-size: 2.2vw;
+    }
+    .v1_2{
+        display: none;
+    }
+    .v1_1{
+        display: none;
+    }
+    /* Кнопки в заголовке */
+    .header-buttons button {
+        width: 45px;
+        height: 45px;
+        border: none;
+        background: white;
+        border-radius: 5px; /* Закругление углов */
+        cursor: pointer;
+    }
+    
+    /* Иконки */
+    .header-buttons .search::before {
+        content: "\f002"; /* Код иконки поиска из Font Awesome */
+        font-family: 'FontAwesome';
+        font-size: 35px;
+        color: rgba(149, 174, 240, 1); /* Цвет иконки поиска */
+    }
+    .header-buttons .user-profile::before {
+        content: "\f0c9"; /* Код иконки пользователя из Font Awesome */
+        font-family: 'FontAwesome';
+        font-size: 35px;
+        color: rgba(149, 174, 240, 1); /* Цвет иконки пользователя */
+    }
+    .search {
+        display: none;
+    }
+    
+    /* Социальные кнопки */
+    .social-media {
+        display: flex;
+        justify-content: space-around; /* Разошлет кнопки по горизонтали */
+    }
+    
+    .VK, .WhatsApp, .Skype {
+        width: 2.5vw;
+        height: 2.5vw;
+        border: none;
+        background: black;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .VK::before {
+        content: "\f189"; /* Код иконки VK */
+        font-family: 'FontAwesome';
+        color: white;
+        font-size: 2vw;
+    }
+    
+    .WhatsApp::before {
+        content: "\f232"; /* Код иконки WhatsApp */
+        font-family: 'FontAwesome';
+        color: white;
+        font-size: 2vw;
+    }
+    
+    .Skype::before {
+        content: "\f17e"; /* Код иконки Skype */
+        font-family: 'FontAwesome';
+        color: white;
+        font-size:2vw;
+    }
+    
+    /* Секции */
+    main {
+        max-width: 100%; /* Ограничение ширины */
+        margin: 0 auto; /* Центрирует основной контент */
+        padding: 0px; /* Отступы внутри */
+    }
+    
+    .intro, .news, .download, .contacts {
+        padding: 40px 0; /* Отступы для секций */
+        text-align: center; /* Центрирование текста */
+    }
+    .posts{
+        text-align:left;
+        padding-left:10px;
+        padding-top: 20px;
+    }
+    .posts p {
+        margin-bottom: 15px;
+        color:white;
+    }
+    .intro {
+        position: relative;
+        text-align: left;
+        padding: 100px 20px; /* Добавлено немного отступов сверху и снизу */
+        width: 100%;
+        height: 50vh; /* Устанавливаем высоту секции на 100% высоты экрана */
+        display: flex; /* Используем Flexbox для центрирования контента */
+        flex-direction: column; /* Устанавливаем направление по колонкам */
+        justify-content: center; /* Центрируем содержимое вертикально */
+        
+    }
+    .intro button{
+        border-radius: 0%;
+        width: 250px;
+        height: 60px;
+        background: rgba(25,141,87,1);
+        text-align:center;
+        font-family: Itim;
+        font-weight: Regular;
+        font-size: 24px;
+        margin-left: 20px;
+        
+    }
+    .intro h2, .news h2, .download h2, .contacts h2 {
+        margin-bottom: 20px; /* Отступы под заголовками */
+    }
+    .dod{
+        background-color: aqua;
+        height: 20vw;
+        padding-top: 1vw;
+    }
+    .dod p{
+        font-family: Itim;
+      font-weight: Regular;
+      font-size: 3vw;
+    }
+    .download h2{
+        color: rgba(25,141,87,1);
+        font-family: Inter;
+        font-weight: Semi Bold;
+        font-size: 4vw;
+    }
+    .but1{
+        border-radius: 0%;
+        width: 20vw;
+        height: 4.5vw;
+        background: rgba(25,141,87,1);
+        text-align:center;
+        font-family: Itim;
+        font-weight: Regular;
+        font-size: 2vw;
+        margin-left: 2vw;
+    }
+    .but2{
+        border-radius: 0%;
+        width: 20vw;
+        height: 4.5vw;
+        background:  rgba(88,217,40,1);
+        text-align:center;
+        font-family: Itim;
+        font-weight: Regular;
+        font-size: 2vw;
+        margin-left: 20vw;
+    }
+    
+    /* Изображения */
+    .v4_4 {
+        position: absolute; /* Абсолютное позиционирование для фона */
+        top: 0; /* Подгоняем кверху */
+        left: 0; /* Подгоняем клево */
+        width: 100%; /* Занимает 100% ширины */
+        height: 100%; /* Занимает 100% высоты */
+        background: url("../images/v4_4.png") no-repeat center center; /* Фоновое изображение */
+        background-size: cover; /* Изображение покрывает весь div */
+        z-index: -1; /* Отправить фон на задний план */
+    }
+    
+    .v5_26 {
+        width: 100%;
+        height: 50vw; 
+        background: url("../images/v5_26.png") no-repeat center center / cover; /* Изображение */
+        background-size: cover; /* Изображение покрывает весь div */
+        z-index: -1; /* Отправить фон на задний план */
+        color: rgba(220,228,208,1);
+        font-family: Inter;
+        font-weight: Semi Bold;
+        font-size: 2.3vw;
+    }
+    
+    /* Футер */
+    footer {
+        text-align: center;
+        padding: 20px 0; /* Отступы для футера */
+        background-color: rgba(51,18,4,0.5199999809265137);;
+    }
+}
+@media (min-width:584px) and (max-width:740px){
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-size: 13px;
+        font-family: 'Inter', sans-serif; /* Предположение о шрифте */
+    }
+    
+    /* Заголовок */
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 10%;
+        background-color: rgba(255, 255, 255, 1); /* Цвет фона шапки */
+    }
+    
+    .header h1 {
+        color: rgba(88, 217, 40, 1); /* Цвет логотипа */
+    }
+    
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        padding-left: 0px;
+    }
+    
+    nav ul li {
+        margin-left: 50px; /* Пространство между элементами меню */
+        font-size: 25px;
+    }
+    footer nav ul li{
+        margin-left: 3vw; /* Пространство между элементами меню */
+        font-size: 2vw;
+    }
+    .headtext{
+        color:rgba(149, 174, 240, 1);
+        font-size: 2.2vw;
+    }
+    .v1_1{
+        display: none;
+    }
+    /* Кнопки в заголовке */
+    .header-buttons button {
+        width: 45px;
+        height: 45px;
+        border: none;
+        background: white;
+        border-radius: 5px; /* Закругление углов */
+        cursor: pointer;
+        padding-right: 2vw;
+    }
+    
+    /* Иконки */
+    .header-buttons .search::before {
+        content: "\f002"; /* Код иконки поиска из Font Awesome */
+        font-family: 'FontAwesome';
+        font-size: 35px;
+        color: rgba(149, 174, 240, 1); /* Цвет иконки поиска */
+    }
+    .user-profile{
+        margin-right: 2vw;
+    }
+    .header-buttons .user-profile::before {
+        content: "\f0c9"; /* Код иконки пользователя из Font Awesome */
+        font-family: 'FontAwesome';
+        font-size: 35px;
+        color: rgba(149, 174, 240, 1); /* Цвет иконки пользователя */
+    }
+    
+    .search {
+        margin-right: 20px; /* Отступ между кнопками */
+        display: none;
+    }
+    
+    /* Социальные кнопки */
+    .social-media {
+        display: flex;
+        justify-content: space-around; /* Разошлет кнопки по горизонтали */
+    }
+    
+    .VK, .WhatsApp, .Skype {
+        width: 2.5vw;
+        height: 2.5vw;
+        border: none;
+        background: black;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .VK::before {
+        content: "\f189"; /* Код иконки VK */
+        font-family: 'FontAwesome';
+        color: white;
+        font-size: 2vw;
+    }
+    
+    .WhatsApp::before {
+        content: "\f232"; /* Код иконки WhatsApp */
+        font-family: 'FontAwesome';
+        color: white;
+        font-size: 2vw;
+    }
+    
+    .Skype::before {
+        content: "\f17e"; /* Код иконки Skype */
+        font-family: 'FontAwesome';
+        color: white;
+        font-size:2vw;
+    }
+    
+    /* Секции */
+    main {
+        max-width: 100%; /* Ограничение ширины */
+        margin: 0 auto; /* Центрирует основной контент */
+        padding: 0px; /* Отступы внутри */
+    }
+    
+    .intro, .news, .download, .contacts {
+        padding: 40px 0; /* Отступы для секций */
+        text-align: center; /* Центрирование текста */
+    }
+    .posts{
+        text-align:left;
+        padding-left:10px;
+        padding-top: 20px;
+    }
+    .posts p {
+        margin-bottom: 15px;
+        color:white;
+    }
+    .intro {
+        position: relative;
+        text-align: left;
+        padding: 100px 20px; /* Добавлено немного отступов сверху и снизу */
+        width: 100%;
+        height: 50vh; /* Устанавливаем высоту секции на 100% высоты экрана */
+        display: flex; /* Используем Flexbox для центрирования контента */
+        flex-direction: column; /* Устанавливаем направление по колонкам */
+        justify-content: center; /* Центрируем содержимое вертикально */
+        
+    }
+    .intro button{
+        border-radius: 0%;
+        width: 250px;
+        height: 60px;
+        background: rgba(25,141,87,1);
+        text-align:center;
+        font-family: Itim;
+        font-weight: Regular;
+        font-size: 24px;
+        margin-left: 20px;
+        
+    }
+    .intro h2, .news h2, .download h2, .contacts h2 {
+        margin-bottom: 20px; /* Отступы под заголовками */
+    }
+    .dod{
+        background-color: aqua;
+        height: 20vw;
+        padding-top: 1vw;
+    }
+    .dod p{
+        font-family: Itim;
+      font-weight: Regular;
+      font-size: 3vw;
+    }
+    .download h2{
+        color: rgba(25,141,87,1);
+        font-family: Inter;
+        font-weight: Semi Bold;
+        font-size: 4vw;
+    }
+    .but1{
+        border-radius: 0%;
+        width: 20vw;
+        height: 4.5vw;
+        background: rgba(25,141,87,1);
+        text-align:center;
+        font-family: Itim;
+        font-weight: Regular;
+        font-size: 2vw;
+        margin-left: 2vw;
+    }
+    .but2{
+        border-radius: 0%;
+        width: 20vw;
+        height: 4.5vw;
+        background:  rgba(88,217,40,1);
+        text-align:center;
+        font-family: Itim;
+        font-weight: Regular;
+        font-size: 2vw;
+        margin-left: 20vw;
+    }
+    
+    /* Изображения */
+    .v4_4 {
+        position: absolute; /* Абсолютное позиционирование для фона */
+        top: 0; /* Подгоняем кверху */
+        left: 0; /* Подгоняем клево */
+        width: 100%; /* Занимает 100% ширины */
+        height: 100%; /* Занимает 100% высоты */
+        background: url("../images/v4_4.png") no-repeat center center; /* Фоновое изображение */
+        background-size: cover; /* Изображение покрывает весь div */
+        z-index: -1; /* Отправить фон на задний план */
+    }
+    
+    .v5_26 {
+        width: 100%;
+        height: 50vw; 
+        background: url("../images/v5_26.png") no-repeat center center / cover; /* Изображение */
+        background-size: cover; /* Изображение покрывает весь div */
+        z-index: -1; /* Отправить фон на задний план */
+        color: rgba(220,228,208,1);
+        font-family: Inter;
+        font-weight: Semi Bold;
+        font-size: 2.3vw;
+    }
+    
+    /* Футер */
+    footer {
+        text-align: center;
+        padding: 20px 0; /* Отступы для футера */
+        background-color: rgba(51,18,4,0.5199999809265137);;
+    }
+}
+@media (min-width:740px) and (max-width:840px){
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-size: 13px;
+        font-family: 'Inter', sans-serif; /* Предположение о шрифте */
+    }
+    
+    /* Заголовок */
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 10%;
+        background-color: rgba(255, 255, 255, 1); /* Цвет фона шапки */
+    }
+    
+    .header h1 {
+        color: rgba(88, 217, 40, 1); /* Цвет логотипа */
+    }
+    
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        padding-left: 0px;
+    }
+    
+    nav ul li {
+        margin-left: 50px; /* Пространство между элементами меню */
+        font-size: 25px;
+    }
+    footer nav ul li{
+        margin-left: 3vw; /* Пространство между элементами меню */
+        font-size: 2vw;
+    }
+    .headtext{
+        color:rgba(149, 174, 240, 1);
+        font-size: 2.2vw;
+    }
+    /* Кнопки в заголовке */
+    .header-buttons button {
+        width: 45px;
+        height: 45px;
+        border: none;
+        background: white;
+        border-radius: 5px; /* Закругление углов */
+        cursor: pointer;
+    }
+    
+    /* Иконки */
+    .header-buttons .search::before {
+        content: "\f002"; /* Код иконки поиска из Font Awesome */
+        font-family: 'FontAwesome';
+        font-size: 35px;
+        color: rgba(149, 174, 240, 1); /* Цвет иконки поиска */
+    }
+    .header-buttons .user-profile::before {
+        content: "\f0c9"; /* Код иконки пользователя из Font Awesome */
+        font-family: 'FontAwesome';
+        font-size: 35px;
+        color: rgba(149, 174, 240, 1); /* Цвет иконки пользователя */
+    }
+    
+    .search {
+        margin-right: 20px; /* Отступ между кнопками */
+        display: none;
+    }
+    
+    /* Социальные кнопки */
+    .social-media {
+        display: flex;
+        justify-content: space-around; /* Разошлет кнопки по горизонтали */
+    }
+    
+    .VK, .WhatsApp, .Skype {
+        width: 2.5vw;
+        height: 2.5vw;
+        border: none;
+        background: black;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .VK::before {
+        content: "\f189"; /* Код иконки VK */
+        font-family: 'FontAwesome';
+        color: white;
+        font-size: 2vw;
+    }
+    
+    .WhatsApp::before {
+        content: "\f232"; /* Код иконки WhatsApp */
+        font-family: 'FontAwesome';
+        color: white;
+        font-size: 2vw;
+    }
+    
+    .Skype::before {
+        content: "\f17e"; /* Код иконки Skype */
+        font-family: 'FontAwesome';
+        color: white;
+        font-size:2vw;
+    }
+    
+    /* Секции */
+    main {
+        max-width: 100%; /* Ограничение ширины */
+        margin: 0 auto; /* Центрирует основной контент */
+        padding: 0px; /* Отступы внутри */
+    }
+    
+    .intro, .news, .download, .contacts {
+        padding: 40px 0; /* Отступы для секций */
+        text-align: center; /* Центрирование текста */
+    }
+    .posts{
+        text-align:left;
+        padding-left:10px;
+        padding-top: 20px;
+    }
+    .posts p {
+        margin-bottom: 15px;
+        color:white;
+    }
+    .intro {
+        position: relative;
+        text-align: left;
+        padding: 100px 20px; /* Добавлено немного отступов сверху и снизу */
+        width: 100%;
+        height: 50vh; /* Устанавливаем высоту секции на 100% высоты экрана */
+        display: flex; /* Используем Flexbox для центрирования контента */
+        flex-direction: column; /* Устанавливаем направление по колонкам */
+        justify-content: center; /* Центрируем содержимое вертикально */
+        
+    }
+    .intro button{
+        border-radius: 0%;
+        width: 250px;
+        height: 60px;
+        background: rgba(25,141,87,1);
+        text-align:center;
+        font-family: Itim;
+        font-weight: Regular;
+        font-size: 24px;
+        margin-left: 20px;
+        
+    }
+    .intro h2, .news h2, .download h2, .contacts h2 {
+        margin-bottom: 20px; /* Отступы под заголовками */
+    }
+    .dod{
+        background-color: aqua;
+        height: 20vw;
+        padding-top: 1vw;
+    }
+    .dod p{
+        font-family: Itim;
+      font-weight: Regular;
+      font-size: 3vw;
+    }
+    .download h2{
+        color: rgba(25,141,87,1);
+        font-family: Inter;
+        font-weight: Semi Bold;
+        font-size: 4vw;
+    }
+    .but1{
+        border-radius: 0%;
+        width: 20vw;
+        height: 4.5vw;
+        background: rgba(25,141,87,1);
+        text-align:center;
+        font-family: Itim;
+        font-weight: Regular;
+        font-size: 2vw;
+        margin-left: 2vw;
+    }
+    .but2{
+        border-radius: 0%;
+        width: 20vw;
+        height: 4.5vw;
+        background:  rgba(88,217,40,1);
+        text-align:center;
+        font-family: Itim;
+        font-weight: Regular;
+        font-size: 2vw;
+        margin-left: 20vw;
+    }
+    
+    /* Изображения */
+    .v4_4 {
+        position: absolute; /* Абсолютное позиционирование для фона */
+        top: 0; /* Подгоняем кверху */
+        left: 0; /* Подгоняем клево */
+        width: 100%; /* Занимает 100% ширины */
+        height: 100%; /* Занимает 100% высоты */
+        background: url("../images/v4_4.png") no-repeat center center; /* Фоновое изображение */
+        background-size: cover; /* Изображение покрывает весь div */
+        z-index: -1; /* Отправить фон на задний план */
+    }
+    
+    .v5_26 {
+        width: 100%;
+        height: 50vw; 
+        background: url("../images/v5_26.png") no-repeat center center / cover; /* Изображение */
+        background-size: cover; /* Изображение покрывает весь div */
+        z-index: -1; /* Отправить фон на задний план */
+        color: rgba(220,228,208,1);
+        font-family: Inter;
+        font-weight: Semi Bold;
+        font-size: 2.3vw;
+    }
+    
+    /* Футер */
+    footer {
+        text-align: center;
+        padding: 20px 0; /* Отступы для футера */
+        background-color: rgba(51,18,4,0.5199999809265137);;
+    }
+}
+@media (min-width:840px){
+    /* Общие стили */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-size: 14px;
+        font-family: 'Inter', sans-serif; /* Предположение о шрифте */
+    }
+    
+    /* Заголовок */
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 10%;
+        background-color: rgba(255, 255, 255, 1); /* Цвет фона шапки */
+    }
+    
+    .header h1 {
+        color: rgba(88, 217, 40, 1); /* Цвет логотипа */
+    }
+    
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        padding-left: 0px;
+    }
+    
+    nav ul li {
+        margin-left: 50px; /* Пространство между элементами меню */
+        font-size: 25px;
+    }
+    footer nav ul li{
+        margin-left: 3vw; /* Пространство между элементами меню */
+        font-size: 2vw;
+    }
+    .headtext{
+        color:rgba(149, 174, 240, 1);
+        font-size: 2.2vw;
+    }
+    /* Кнопки в заголовке */
+    .header-buttons button {
+        width: 45px;
+        height: 45px;
+        border: none;
+        background: white;
+        border-radius: 5px; /* Закругление углов */
+        cursor: pointer;
+    }
+    
+    /* Иконки */
+    .header-buttons .search::before {
+        content: "\f002"; /* Код иконки поиска из Font Awesome */
+        font-family: 'FontAwesome';
+        font-size: 35px;
+        color: rgba(149, 174, 240, 1); /* Цвет иконки поиска */
+    }
+    .header-buttons .user-profile::before {
+        content: "\f007"; /* Код иконки пользователя из Font Awesome */
+        font-family: 'FontAwesome';
+        font-size: 35px;
+        color: rgba(149, 174, 240, 1); /* Цвет иконки пользователя */
+    }
+    
+    .search {
+        margin-right: 20px; /* Отступ между кнопками */
+    }
+    
+    /* Социальные кнопки */
+    .social-media {
+        display: flex;
+        justify-content: space-around; /* Разошлет кнопки по горизонтали */
+    }
+    
+    .VK, .WhatsApp, .Skype {
+        width: 2.5vw;
+        height: 2.5vw;
+        border: none;
+        background: black;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .VK::before {
+        content: "\f189"; /* Код иконки VK */
+        font-family: 'FontAwesome';
+        color: white;
+        font-size: 2vw;
+    }
+    
+    .WhatsApp::before {
+        content: "\f232"; /* Код иконки WhatsApp */
+        font-family: 'FontAwesome';
+        color: white;
+        font-size: 2vw;
+    }
+    
+    .Skype::before {
+        content: "\f17e"; /* Код иконки Skype */
+        font-family: 'FontAwesome';
+        color: white;
+        font-size:2vw;
+    }
+    
+    /* Секции */
+    main {
+        max-width: 100%; /* Ограничение ширины */
+        margin: 0 auto; /* Центрирует основной контент */
+        padding: 0px; /* Отступы внутри */
+    }
+    
+    .intro, .news, .download, .contacts {
+        padding: 40px 0; /* Отступы для секций */
+        text-align: center; /* Центрирование текста */
+    }
+    .posts{
+        text-align:left;
+        padding-left:10px;
+        padding-top: 20px;
+    }
+    .posts p {
+        margin-bottom: 15px;
+        color:white;
+    }
+    .intro {
+        position: relative;
+        text-align: left;
+        padding: 100px 20px; /* Добавлено немного отступов сверху и снизу */
+        width: 100%;
+        height: 50vh; /* Устанавливаем высоту секции на 100% высоты экрана */
+        display: flex; /* Используем Flexbox для центрирования контента */
+        flex-direction: column; /* Устанавливаем направление по колонкам */
+        justify-content: center; /* Центрируем содержимое вертикально */
+        
+    }
+    .intro button{
+        border-radius: 0%;
+        width: 250px;
+        height: 60px;
+        background: rgba(25,141,87,1);
+        text-align:center;
+        font-family: Itim;
+        font-weight: Regular;
+        font-size: 24px;
+        margin-left: 20px;
+        
+    }
+    .intro h2, .news h2, .download h2, .contacts h2 {
+        margin-bottom: 20px; /* Отступы под заголовками */
+    }
+    .dod{
+        background-color: aqua;
+        height: 20vw;
+        padding-top: 1vw;
+    }
+    .dod p{
+        font-family: Itim;
+      font-weight: Regular;
+      font-size: 3vw;
+    }
+    .download h2{
+        color: rgba(25,141,87,1);
+        font-family: Inter;
+        font-weight: Semi Bold;
+        font-size: 4vw;
+    }
+    .but1{
+        border-radius: 0%;
+        width: 20vw;
+        height: 4.5vw;
+        background: rgba(25,141,87,1);
+        text-align:center;
+        font-family: Itim;
+        font-weight: Regular;
+        font-size: 2vw;
+        margin-left: 2vw;
+    }
+    .but2{
+        border-radius: 0%;
+        width: 20vw;
+        height: 4.5vw;
+        background:  rgba(88,217,40,1);
+        text-align:center;
+        font-family: Itim;
+        font-weight: Regular;
+        font-size: 2vw;
+        margin-left: 20vw;
+    }
+    
+    /* Изображения */
+    .v4_4 {
+        position: absolute; /* Абсолютное позиционирование для фона */
+        top: 0; /* Подгоняем кверху */
+        left: 0; /* Подгоняем клево */
+        width: 100%; /* Занимает 100% ширины */
+        height: 100%; /* Занимает 100% высоты */
+        background: url("../images/v4_4.png") no-repeat center center; /* Фоновое изображение */
+        background-size: cover; /* Изображение покрывает весь div */
+        z-index: -1; /* Отправить фон на задний план */
+    }
+    
+    .v5_26 {
+        width: 100%;
+        height: 50vw; 
+        background: url("../images/v5_26.png") no-repeat center center / cover; /* Изображение */
+        background-size: cover; /* Изображение покрывает весь div */
+        z-index: -1; /* Отправить фон на задний план */
+        color: rgba(220,228,208,1);
+        font-family: Inter;
+        font-weight: Semi Bold;
+        font-size: 2.3vw;
+    }
+    
+    /* Футер */
+    footer {
+        text-align: center;
+        padding: 20px 0; /* Отступы для футера */
+        background-color: rgba(51,18,4,0.5199999809265137);;
+    }
+}

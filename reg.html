@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создание нового пользователя</title>
+    <link rel="stylesheet" href="./css/auto.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Создание нового пользователя</h2>
+        <form>
+            <div class="form-group">
+                <label for="fullname">ФИО</label>
+                <input type="text" id="fullname" placeholder="Введите полное имя" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Электронная почта</label>
+                <input type="email" id="email" placeholder="you@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="username">Имя пользователя</label>
+                <input type="text" id="username" placeholder="Введите имя пользователя" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Пароль</label>
+                <input type="password" id="password" placeholder="Введите пароль" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm_password">Подтверждение пароля</label>
+                <input type="password" id="confirm_password" placeholder="Подтвердите пароль" required>
+            </div>
+            <div class="form-group">
+                <label for="role">Роль пользователя</label>
+                <select id="role" required>
+                    <option value="">Выберите роль</option>
+                    <option value="admin">Администратор</option>
+                    <option value="user">Пользователь</option>
+                    <option value="moderator">Модератор</option>
+                </select>
+            </div>
+            <button type="submit">Создать учетную запись</button>
+        </form>
+        <div class="footer">
+            <p><a href="auth.html">Назад к авторизации</a></p>
+        </div>
+    </div>
+</body>
+</html>
